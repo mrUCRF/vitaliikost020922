@@ -33,6 +33,8 @@ const ChartContainer = () => {
 		for (let i = 0; i < index; i++) {
 			result += (baseData[i].time / form) * 100;
 		}
+        console.log(`indent: ${result}`)
+        console.log(`form: ${form}`)
 		return result;
 	};
 	

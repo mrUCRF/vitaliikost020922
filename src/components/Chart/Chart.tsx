@@ -20,7 +20,7 @@ export const Chart: React.FC<Props> = ({baseData, refreshData, form, indent}) =>
             <div className={s.chartContainer}>
             {baseData.map(({name, time}, index) => {
                 return (
-                    <div className={s.chartOneLine} key={index}>
+                    <div className={s.chartOneLine} key={index} data-testid="chart">
 			<span className={s.lineName}>{name}</span>
 			<div className={s.chartLine}>
 				<div className={s.resultLine} style={{ width: `${(time / form) * 100}%`, marginLeft: `${indent(index)}%` }}>
